@@ -43,7 +43,7 @@ export default {
     methods: {
         async searchCities() {
             try {
-                const response = await axios.get(`http://api.openweathermap.org/geo/1.0/direct`, {
+                const response = await axios.get(`https://api.openweathermap.org/geo/1.0/direct`, {
                     params: {
                         q: this.inputCity,
                         limit: 10,

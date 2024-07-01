@@ -77,7 +77,7 @@ export default {
     methods: {
         async getHourlyTemp() {
             try {
-                const response = await axios.get(`http://api.openweathermap.org/data/2.5/forecast?id=${this.idCity}&appid=${apiKey}&units=metric`);
+                const response = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?id=${this.idCity}&appid=${apiKey}&units=metric`);
                 if (response.status === 200) {
                     this.temperature = response.data.list;
 
@@ -104,7 +104,7 @@ export default {
         },
         async getWeeklyTemp() {
             try {
-                const response = await axios.get(`http://api.openweathermap.org/data/2.5/forecast?id=${this.idCity}&cnt=40&appid=${apiKey}&units=metric`);
+                const response = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?id=${this.idCity}&cnt=40&appid=${apiKey}&units=metric`);
                 if (response.status === 200) {
                     this.temperature = response.data.list;
                     const labels = this.filteredTemperature.map(item => item.dt_txt.split(' ')[0]);
