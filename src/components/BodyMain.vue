@@ -280,12 +280,21 @@ li {
 
 
 @media screen and (max-width: 1200px) {
+
+  #night,
   .body-main>ul {
-    width: max-content;
-    min-height: auto;
+    width: 40vw;
+    min-height: max-content;
     margin: 30px 0 0 0;
   }
 }
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+
+  #night,
+  .body-main>ul {
+    width: 70vw;
+    min-height: max-content;
+  }
+}
 </style>
