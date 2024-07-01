@@ -88,7 +88,7 @@ export default {
                         labels,
                         datasets: [
                             {
-                                label: this.$t('Temperature (°C)'),
+                                label: this.t('Temperature (°C)'),
                                 data: temperatures,
                                 backgroundColor: 'rgba(54, 162, 235, 0.2)',
                                 borderColor: 'rgba(54, 162, 235, 1)',

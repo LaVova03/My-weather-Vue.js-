@@ -61,7 +61,7 @@ export default {
             switch: false,
             userLocation: '',
             loading: false,
-            isDaytime: [true],
+            isDaytime: [],
         };
     },
     created() {

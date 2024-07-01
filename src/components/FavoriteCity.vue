@@ -38,7 +38,7 @@ export default {
             favorites: true,
             switch: false,
             loading: false,
-            isDaytime: [true],
+            isDaytime: [],
         }
     },
     created() {
