@@ -53,6 +53,7 @@ export default {
     justify-content: center;
     align-items: center;
     font-size: 20px;
+    padding: 0 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0 auto;
     top: 50px;
