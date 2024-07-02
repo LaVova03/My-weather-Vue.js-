@@ -95,7 +95,7 @@ export default {
                     const { sunrise, sunset } = response.data.sys;
                     const currentTime = Math.floor(Date.now() / 1000);
 
-                    this.isDaytime = [currentTime >= sunrise && currentTime <= sunset];
+                    this.isDaytime.push(currentTime >= sunrise && currentTime <= sunset);
 
                     this.iconUrl[this.curCard] = `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`;
                 }
