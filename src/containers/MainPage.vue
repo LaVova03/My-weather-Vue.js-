@@ -114,7 +114,6 @@ export default {
                 this.iconUrl.push('');
                 this.isDaytime.push(true);
                 this.curCard = this.data.length - 1;
-                console.log(this.isDaytime)
             }
         },
         showModal(index) {
