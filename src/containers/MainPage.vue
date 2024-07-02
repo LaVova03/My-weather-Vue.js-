@@ -104,7 +104,8 @@ export default {
                 this.error = 'Error Get Weather';
                 console.error('Error:', error);
             } finally {
-                this.loading = false
+                this.loading = false;
+                this.city = '';
             }
         },
         addCard() {
