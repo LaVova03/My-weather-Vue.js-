@@ -81,7 +81,7 @@ export default {
                 if (response.status === 200) {
                     this.temperature = response.data.list;
 
-                    const labels = this.filteredTemperature.map(item => item.dt_txt);
+                    const labels = this.filteredTemperature.map(item => item.dt_txt.split(' ')[1]);
                     const temperatures = this.filteredTemperature.map(item => item.main.temp);
 
                     this.chartData = {
