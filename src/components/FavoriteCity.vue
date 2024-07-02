@@ -78,6 +78,7 @@ export default {
                         const currentTime = Math.floor(Date.now() / 1000);
 
                         this.isDaytime.push(currentTime >= sunrise && currentTime <= sunset);
+                        console.log(this.isDaytime);
 
                         this.iconUrl.push(`https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`);
                     }

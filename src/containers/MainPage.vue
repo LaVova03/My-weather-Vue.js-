@@ -61,7 +61,7 @@ export default {
             switch: false,
             userLocation: '',
             loading: false,
-            isDaytime: [],
+            isDaytime: [true],
         };
     },
     created() {
@@ -95,6 +95,7 @@ export default {
                     const { sunrise, sunset } = response.data.sys;
                     const currentTime = Math.floor(Date.now() / 1000);
 
+                    this.isDaytime.splice(this.curCard, 1);
                     this.isDaytime.push(currentTime >= sunrise && currentTime <= sunset);
 
                     this.iconUrl[this.curCard] = `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`;
